@@ -1,0 +1,16 @@
+create table users(
+accountno int(3) unique key auto_increment,
+name varchar(20),surname varchar(20),
+mobile varchar(10),
+DOB date,a
+adharcardno int(6),
+amount varchar(20),
+pin int(3) primary key);
+
+
+create table balance(
+deposit varchar(20),
+withdraw varchar(20),
+currbalnce varchar(20),
+pin int(3) not null,
+foreign key(pin) references users(pin));
