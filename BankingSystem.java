@@ -280,3 +280,11 @@ public class BankingSystem {
     	
     }
 }
+
+
+
+function get(){
+
+console.log("hello nidhi")
+}
+get()
